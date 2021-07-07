@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    --def: #96B7C4;
+    --inv: #fff;
+}
+
+.jumbotron {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brand-name {
+    font-size: 80px;
+    color: white;
+    margin-top: 7rem;
+    font-weight: bold;
+}
+
+.headline {
+    margin-top: 7rem;
+    color: white;
+    font-weight: 700;
+    z-index: 100;
+    font-size: 30px;
+}
+
+.mid {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container, .hello {
+    height: 100%;
+    margin: 0 50px;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 16px;
+    letter-spacing: 0.4em;
+}
+
+.btn>svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn>svg>rect {
+    stroke: white;
+    stroke-width: 4;
+    stroke-dasharray: 276, 0;
+    stroke-dashoffset: 0;
+    -webkit-transition: all 600ms ease;
+    transition: all 1000ms ease;
+}
+
+.btn>span {
+    background: white;
+    margin-left: 9px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn:hover>svg>rect {
+    stroke-width: 4;
+    stroke-dasharray: 165, 440;
+    stroke-dashoffset: 400;
+}
+
+.description {
+    color: white;
+    margin-top: 2rem;
+    width: 50%;
+    text-align: center;
+    z-index: 100;
+}
