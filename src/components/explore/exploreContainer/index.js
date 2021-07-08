@@ -17,7 +17,7 @@ const index = () => {
                 <ExploreCard src={img2} name="Brahmaputra" location="Guwahati" />
                 <ExploreCard src={img3} name="Bibliophilia Cafe" location="Guwahati" />
             </div>
-            <span className={styles["see-more"]}>see more</span>
+            <span className={styles["see-more"]}>see more ...</span>
         </>
     )
 }

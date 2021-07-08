@@ -51,3 +51,10 @@
     font-weight: 700;
     margin-top: 0.5rem;
 }
+
+.popup {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    transition: 0.6s ease;
+}
