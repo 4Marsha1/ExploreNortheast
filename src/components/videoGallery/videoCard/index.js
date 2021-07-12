@@ -1,14 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from "./VideoCard.module.css"
+import Popup from "../../popup"
+import { ReactComponent as Play } from "../../../uploads/playButton.svg"
+import YouTube from 'react-youtube'
 
-const index = (props) => {
+const Index = ({ video }) => {
+    const [isPopupOpen, setIsPopupOpen] = useState(false)
+
+    const togglePopup = () => {
+        setIsPopupOpen(!isPopupOpen);
+    }
+
     return (
         <div className={styles["video"]}>
-            <img src={props.src} />
-            <span className={styles["date"]}>{props.date}</span>
-            <span className={styles["location"]}>{props.location}</span>
+            <div className={styles["video-card"]}>
+                <Play className={styles["play"]} onClick={togglePopup} />
+                <img src={video.img} alt="video image" className={styles["video-img"]} />
+            </div>
+            <span className={styles["date"]}>{video.date}</span>
+            <span className={styles["location"]}>{video.location}</span>
+            {isPopupOpen && (
+                <Popup
+                    type="video"
+                    className={styles["popup"]}
+                    video_link={video.video_link}
+                    handleOnButtonClick={togglePopup}
+                />
+            )}
         </div>
     )
 }
 
-export default index
+export default Index

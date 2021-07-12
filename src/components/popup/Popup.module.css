@@ -1,6 +1,6 @@
 .popup-box {
     position: fixed;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     width: 100%;
     height: 100vh;
     top: 0;
@@ -12,32 +12,108 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     width: 60%;
-    height: 70%;
-    margin: 0 auto;
-    max-height: 80vh;
-    margin: 7rem auto;
-    background: #fff;
-    border-radius: 8px;
+    height: 80%;
+    max-height: 90vh;
+    background: #202124;
+    margin: 5rem auto;
+    border-radius: 20px;
     box-shadow: 2px 2px 18px 0px #00000005;
-    padding: 10%;
+}
+
+.bg-img {
+    position: absolute;
+    width: 60%;
+    height: 80%;
+    max-height: 90vh;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 18px 0px #00000005;
+    object-fit: cover;
+    filter: brightness( 30%);
+}
+
+.popup-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    z-index: 100;
+    margin: 1rem 3rem 0.5rem 3rem;
+}
+
+.pin {
+    width: 40px;
+    margin-left: 1.5rem;
 }
 
 .popup-button {
-    border: 1px solid #5A24A6;
-    color: #5A24A6;
-    border-radius: 20px;
-    background-color: white;
-    font-size: 12px;
-    padding: 1%;
-    width: 80%;
-    margin: 4% 0;
-    box-shadow: 0px 2px 4px 0px #00000033;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
     text-align: center;
+    cursor: pointer;
+}
+
+.btn2 {
+    color: white;
+    font-size: 18px;
+    border: none;
+    background: none;
+    margin-top: 0.5rem;
+    width: 20%;
+    padding: 0.5rem;
+    z-index: 100;
+    font-weight: 700;
+    color: white;
+    transition: 0.6s ease;
 }
 
 .popup-body {
     text-align: center;
-    font-weight: bold;
+    font-weight: 500;
+    width: 90%;
+    color: white;
+    z-index: 100;
+    font-size: 18px;
+    margin-top: 5rem;
+}
+
+.box>span {
+    text-align: center;
+    font-weight: 500;
+    width: 70%;
+    color: white;
+    z-index: 100;
+    padding: 0 2rem;
+    font-size: 16px;
+}
+
+.explore {
+    margin-top: 3rem;
+    width: 20%;
+    padding: 0.5rem;
+    z-index: 100;
+    font-weight: 700;
+    color: white;
+    background: none;
+    border: 1px solid white;
+    border-radius: 20px;
+    transition: 0.6s ease;
+}
+
+.explore:hover {
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+.video-play {
+    z-index: 100;
+    margin-top: 1rem;
+    height: 420px;
+    border-radius: 20px;
+    width: 750px;
+    margin-bottom: -2.5rem;
 }

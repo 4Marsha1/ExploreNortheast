@@ -37,7 +37,11 @@ const index = () => {
             </div>
             <span className={styles["headline"]}>Discover Northeast India to the fullest!</span>
             <div className={styles["description"]}>
-                <span >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec pulvinar tellus, in mollis velit. Duis non mauris tempus, venenatis tellus consectetur, mattis sem. Suspendisse non tempus nulla, quis cursus nisi. Mauris tristique, ligula vulputate imperdiet vulputate.</span>
+                <span >
+                    From grandiose green mountains to curly white clouds covering mother nature's undying prosperity,
+                    from mighty Brahmaputra to graceful Seven Sisters Waterfalls; Northeast India has it all.
+                    Planning for your next big trip? Explore our page to find the best suitable locations for your next trip.
+                </span>
             </div>
         </div>
     )
