@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from "./Navbar.module.css"
-import { ReactComponent as Logo } from "../../uploads/logo.svg"
+import Logo from "../../uploads/logo.png"
+
+const logo = Logo
 
 const index = () => {
     return (
@@ -8,7 +10,7 @@ const index = () => {
             <ul>
                 <li><span>About</span></li>
                 <li><span>Explore</span></li>
-                <Logo className={styles['logo']} />
+                <img src={logo} className={styles['logo']} alt="logo" />
                 <li><span>Videos</span></li>
                 <li><span>Blog</span></li>
             </ul>
