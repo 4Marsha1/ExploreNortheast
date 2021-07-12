@@ -5,7 +5,7 @@ const videoData = [
     {
         id: 1,
         date: "May 30,2021",
-        location: "Arunachal",
+        location: "Arunachal Pradesh",
         img: img1,
         video_link: "HteQt1mkRfM"
     }

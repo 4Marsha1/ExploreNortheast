@@ -14,8 +14,8 @@ const Index = ({ video }) => {
     return (
         <div className={styles["video"]}>
             <div className={styles["video-card"]}>
-                <Play className={styles["play"]} onClick={togglePopup} />
-                <img src={video.img} alt="video image" className={styles["video-img"]} />
+                <Play className={styles["play"]} />
+                <img src={video.img} alt="video image" className={styles["video-img"]} onClick={togglePopup} />
             </div>
             <span className={styles["date"]}>{video.date}</span>
             <span className={styles["location"]}>{video.location}</span>
