@@ -12,7 +12,7 @@ const index = () => {
             <div className={styles["explore"]}>
                 {cards}
             </div>
-            <span className={styles["see-more"]}>see more ...</span>
+            <button className={styles["see-more"]}>see-more...</button>
         </>
     )
 }
