@@ -36,13 +36,11 @@ function Popup({ type, body, handleOnButtonClick, img, address, video_link }) {
         return (
             <div className={styles["popup-box"]}>
                 <div className={styles["box"]}>
-                    <div className={styles["popup-header"]}>
-                        <div></div>
-                        <Pin className={styles['pin']} />
-                        <div className={styles["popup-button"]} onClick={handleOnButtonClick}>X</div>
+                    <div className={styles["video-popup-body"]}>
+                        <YouTube videoId={video_link} opts={options} className={styles["video-play"]} />
+                        <div className={styles["video-popup-button"]} onClick={handleOnButtonClick}>X</div>
                     </div>
-                    <YouTube videoId={video_link} opts={options} className={styles["video-play"]} />
-                    <div className={styles["explore"]}>Explore More</div>
+                    <div className={styles["video-explore"]}>Explore More</div>
                 </div>
             </div >
         );
